@@ -6,7 +6,7 @@ body, .main-text{
     justify-content: center;
 }
 
-.header, .main1 {
+.header, .main1, .footer {
     background-color: #1f2937;
 }
 
@@ -65,7 +65,12 @@ ul, a {
 
 
 .title {
-    background-color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
 }
 
 .quote, .person {
@@ -80,10 +85,85 @@ button {
     text-align: center;
     display: inline-block;
     background-color: #3882f6;
-    border-radius: 12px;
+    border-radius: 5px;
 }
 
-img {
+img, .normal {
     height: 150px;
     width: auto;
+}
+
+.trees, .mountain, .lake, .snow {
+    border-radius: 30px;
+    border: 4px solid #3882f6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.info {
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.text {
+    text-align: center;
+}
+
+.quote {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    margin-top: 48px;
+}
+
+.person {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.main2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    padding: 38px;
+    background-color: #3882f6;
+    border-radius: 5px;
+}
+
+.up {
+    border: 2px solid white;
+    gap: 12px;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.call, .click { 
+    text-align: left;
+    color: white;
+    margin: 0;
+}
+
+.call {
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    margin-top: 42px;
+    padding: 24px;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
 }
